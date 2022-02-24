@@ -11,7 +11,7 @@
 .section-inner {
     width: 380px;
     margin: 0 auto;
-    min-height: 380px;
+    min-height: 330px;
     background: #ffffff;
     box-shadow: 5px 0px 54px rgba(0, 0, 0, 0.1);
     padding: 32px;
@@ -24,25 +24,15 @@
     overflow: hidden;
 }
 
-#formOne {
-    position: absolute;
-    left: 12px;
-    padding: 24px;
-    width: 380px;
+
+/* Form Steps */
+
+.form-step {
+    display: none;
 }
 
-#formTwo {
-    position: absolute;
-    right: -380px;
-    padding: 24px;
-    width: 380px;
-}
-
-#formThree {
-    position: absolute;
-    right: -380px;
-    padding: 24px;
-    width: 380px;
+.form-step.active {
+    display: block;
 }
 
 .step {
@@ -60,12 +50,13 @@
     color: green;
 }
 
-#stepPro {
+.stepPro {
     display: flex;
+    padding-bottom: 24px;
 }
 
 .thank-you {
-    padding-top: 140px;
+    padding-top: 110px;
     text-align: center;
     display: none;
 }

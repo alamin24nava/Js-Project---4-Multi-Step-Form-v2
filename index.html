@@ -16,54 +16,54 @@
 <body>
     <section class="section-wrap">
         <div class="section-inner">
-            <div class="align-items-center justify-content-between" id="stepPro">
-                <div class="step stepOne step-active">Step 1</div>
-                <div class="step stepTwo">Step 2</div>
-                <div class="step stepThree">Step 3</div>
+            <div class="align-items-center justify-content-between stepPro" id="">
+                <div class="pro-step step-active">Step 1</div>
+                <div class="pro-step">Step 2</div>
+                <div class="pro-step">Step 3</div>
             </div>
             <form class="g-3" id="formFillUp">
-                <div class="row" id="formOne">
-                    <h4 class="py-3">Personal Information</h4>
+                <div class="row form-step active " id="formOne">
+                    <h4 class="pb-3">Personal Information</h4>
                     <div class="col-md-12">
                         <label for="inputName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="inputName">
+                        <input type="text" class="form-control" id="inputName" name="inputName">
                     </div>
                     <div class="col-md-12">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="inputEmail">
+                        <input type="text" class="form-control" id="inputEmail" name="inputEmail">
                     </div>
                     <div class="col-12 mt-4 text-end">
-                        <button type="submit" class="btn btn-primary btn-next-1">Next</button>
+                        <button type="button" class="btn btn-primary btn-next">Next</button>
                     </div>
                 </div>
-                <div class="row" id="formTwo">
-                    <h4 class="py-3">Educational Information</h4>
+                <div class="row form-step " id="formTwo">
+                    <h4 class="pb-3">Educational Information</h4>
                     <div class="col-md-12">
                         <label for="inputEducation" class="form-label">Education Level</label>
-                        <input type="text" class="form-control" id="inputEducation">
+                        <input type="text" class="form-control" id="inputEducation" name="inputEducation">
                     </div>
                     <div class="col-md-12">
                         <label for="inputPassingYear" class="form-label">Passing Year</label>
-                        <input type="number" class="form-control" id="inputPassingYear">
+                        <input type="number" class="form-control" id="inputPassingYear" name="inputPassingYear">
                     </div>
                     <div class="col-12 mt-4 d-flex align-items-center justify-content-between">
-                        <button type="submit" class="btn btn-primary btn-prev-1">Previous</button>
-                        <button type="submit" class="btn btn-primary btn-next-2">Next</button>
+                        <button type="button" class="btn btn-primary btn-prev">Previous</button>
+                        <button type="button" class="btn btn-primary btn-next">Next</button>
                     </div>
                 </div>
 
-                <div class="row" id="formThree">
-                    <h4 class="py-3">Job Information</h4>
+                <div class="row form-step" id="formThree">
+                    <h4 class="pb-3">Job Information</h4>
                     <div class="col-md-12">
                         <label for="inputCompany" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="inputCompany">
+                        <input type="text" class="form-control" id="inputCompany" name="inputCompany">
                     </div>
                     <div class="col-md-12">
                         <label for="jobTitle" class="form-label">Job Title</label>
-                        <input type="text" class="form-control" id="jobTitle">
+                        <input type="text" class="form-control" id="jobTitle" name="jobTitle">
                     </div>
                     <div class="col-12 mt-4 d-flex align-items-center justify-content-between">
-                        <button type="submit" class="btn btn-primary btn-prev-2">Previous</button>
+                        <button type="button" class="btn btn-primary btn-prev">Previous</button>
                         <button type="submit" class="btn btn-primary btn-submit">Submit</button>
                     </div>
                 </div>
@@ -71,6 +71,7 @@
 
             <div class="thank-you">
                 <h3>Thank You Mia Bhai</h3>
+                <p>Your Form Submited</p>
             </div>
         </div>
     </section>
